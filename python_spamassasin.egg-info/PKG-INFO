@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: python-spamassasin
-Version: 0.0.1
-Summary: Wrapper for SpamAssasin deamon
-Home-page: https://github.com/pypa/sampleproject
+Version: 0.0.3
+Summary: Wrapper for SpamAssasin SPAMC deamon
+Home-page: https://github.com/petermat/python_spamassasin
 Author: Peter Matkovski
 Author-email: p.matkovski@gmail.com
 License: UNKNOWN
@@ -15,9 +15,15 @@ Description: # Python-SpamAssasin module
         
         # Instalation
         
+        #Requirements
+        
+        Pytest needs to be installed to run test
+        
+        	sudo apt install python-pytest
+        
         Use PIP package manager
         
-        	pip install python-spamassasin
+        	pip install python_spamassasin
         
         
         
@@ -53,6 +59,7 @@ Description: # Python-SpamAssasin module
         
         # Run tests
         
+        	pytest -v
         
         
 Platform: UNKNOWN

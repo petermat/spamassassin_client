@@ -1,19 +1,21 @@
 # Python-SpamAssasin module
 This is a python wrapper for SpamAssisin's SPAMC deamon. It provides these funtions:
-* get_score(float) - final score from spamassasin, ex: '-1.3'
+* get_score(float) - final score from spamassasin
 * get_fulltext(string) - full report as string from SpamAssasin deamon
 * get_report_json(json) - full report as JSON from SpamAssasin deamon
 
 
 # Instalation
 
-#Requirements
+Install SpamAssasin
 
-Pytest needs to be installed to run test
+	sudo apt get spamassasin
+
+Pytest needs to be installed to run tests
 
 	sudo apt install python-pytest
 
-Use PIP package manager
+Use PIP package manager to install this module
 
 	pip install python_spamassasin
 
@@ -51,4 +53,5 @@ Module can be used in following way:
 
 # Run tests
 
+	pytest -v
 
