@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="python-spamassasin",
-    version="0.0.1",
+    version="0.0.2",
     author="Peter Matkovski",
     author_email="p.matkovski@gmail.com",
     description="Wrapper for SpamAssasin SPAMC deamon",
