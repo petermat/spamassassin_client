@@ -1,0 +1,8 @@
+README.md
+setup.py
+python_spamassasin/__init__.py
+python_spamassasin/spamassasin.py
+python_spamassasin.egg-info/PKG-INFO
+python_spamassasin.egg-info/SOURCES.txt
+python_spamassasin.egg-info/dependency_links.txt
+python_spamassasin.egg-info/top_level.txt
