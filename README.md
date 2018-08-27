@@ -17,7 +17,7 @@ Pytest needs to be installed to run tests
 
 Use PIP package manager to install this module
 
-	pip install python_spamassasin
+	pip install spamassasin_client
 
 
 
@@ -27,7 +27,7 @@ Module can be used in following way:
 
 	import os
 
-	from spamassasin import SpamAssassin
+	from spamassasin_client import SpamAssassin
 
 	FILES = [dict(type='spam', name='sample-spam.txt'),
 		 dict(type='ham', name='sample-nonspam.txt')]
