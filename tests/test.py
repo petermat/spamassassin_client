@@ -1,7 +1,7 @@
 import os, json
 import socket
 
-from spamassasin_client import SpamAssassin
+from spamassassin_client import SpamAssassin
 
 
 FILES = [dict(type='spam', name='sample-spam.txt'),

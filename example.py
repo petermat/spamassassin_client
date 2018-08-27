@@ -18,7 +18,7 @@
 """Example program using SpamAssasin"""
 import os
 
-from spamassasin import SpamAssassin
+from spamassasin_client import SpamAssassin
 
 FILES = [dict(type='spam', name='sample-spam.txt'),
          dict(type='ham', name='sample-nonspam.txt')]
