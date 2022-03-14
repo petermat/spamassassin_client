@@ -1,24 +1,26 @@
 # SpamAssassin Client python module
-This is a python wrapper for SpamAssissin's SPAMC deamon. It provides these funtions:
-* get_score(float) - final score from spamassasin
-* get_fulltext(string) - full report as string from SpamAssasin deamon
-* get_report_json(json) - full report as JSON from SpamAssasin deamon
+This is a python wrapper for SpamAssissin's SPAMC deamon. It provides these methods:
 
+<dl>
+<dt>is_spam(level=5) -> bool</dt>
+<dd>SPAM status from SpamAssasin deamon</dd>
+<dt>get_score() -> float</dt>
+<dd>final score from SpamAssasin deamon</dd>
+<dt>get_fulltext() -> str</dt>
+<dd>full report from SpamAssasin deamon</dd>
+<dt>get_report_json() -> dict</dt>
+<dd>full report as JSON from SpamAssasin deamon</dd>
+</dl>
 
-# Instalation
+# Installation
 
-Install SpamAssassin
+Install the `SpamAssassin` daemon and `pytest`:
 
-	sudo apt get spamassassin
+	sudo apt install spamassassin python-pytest
 
-Pytest needs to be installed to run tests
+Use the PIP package manager to install this module:
 
-	sudo apt install python-pytest
-
-Use PIP package manager to install this module
-
-	pip install spamassassin_client
-
+	python -m pip install spamassassin_client
 
 
 # Example
