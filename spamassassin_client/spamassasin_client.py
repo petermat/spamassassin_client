@@ -6,14 +6,14 @@ first_line_pattern = re.compile(br'^SPAMD/[^ ]+ 0 EX_OK$')
 
 
 class SpamAssassin(object):
-    def __init__(self, message, timeout=20):
+    def __init__(self, message, host='127.0.0.1', port=783, timeout=20):
         self.score = None
         self.symbols = None
 
         # Connecting
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client.settimeout(timeout)
-        client.connect(('127.0.0.1', 783))
+        client.connect((host, port))
 
         # Sending
         client.sendall(self._build_message(message))
